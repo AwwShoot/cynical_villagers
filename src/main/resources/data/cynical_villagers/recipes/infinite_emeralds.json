@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WG ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:splash_potion"
+
+    },
+    "G": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "cynical_villagers:infinite_emeralds",
+    "count": 1
+  }
+}

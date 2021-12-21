@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "cynical_villagers:infinite_emeralds"
+    }
+  },
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 64
+  }
+}

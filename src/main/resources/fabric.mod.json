@@ -3,10 +3,10 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Cynical Villagers",
+  "description": "A mod to quicken the process of turning villagers into resource outputs by skipping a few steps",
   "authors": [
-    "Me!"
+    "Aww_Shoot#8649"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/cynical_villagers/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.cynical_villagers.CVillagersCore"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cynical_villagers.mixins.json"
   ],
 
   "depends": {

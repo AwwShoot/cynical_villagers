@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " C ",
-    "   ",
-    "   "
+    "DCD",
+    "DDD",
+    "DDD"
   ],
   "key": {
     "C": {
       "item": "cynical_villagers:infinite_emeralds"
+    },
+    "D": {
+      "item": "minecraft:dirt"
     }
   },
   "result": {

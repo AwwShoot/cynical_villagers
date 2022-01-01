@@ -4,6 +4,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.SpecialRecipeSerializer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
@@ -17,11 +19,15 @@ public class CVillagersCore implements ModInitializer {
 		return new Identifier("cynical_villagers", path);
 	}
 
-	static final Item INFINITE_EMERALDS	=  new Item(new Item.Settings().group(ItemGroup.MISC));
+	static final InfiniteEmeraldsItem INFINITE_EMERALDS	=  new InfiniteEmeraldsItem(new Item.Settings().group(ItemGroup.MISC));
+
+	static final SpecialRecipeSerializer<InfiniteEmeraldsRecipe> INFINITE_EMERALDS_RECIPE =
+		RecipeSerializer.register("crafting_special_infinite_emeralds", new SpecialRecipeSerializer<InfiniteEmeraldsRecipe>(InfiniteEmeraldsRecipe::new));
+
 	@Override
 	public void onInitialize() {
 
 		Registry.register(Registry.ITEM,  getID("infinite_emeralds"), INFINITE_EMERALDS);
-		LOGGER.info("a");
+		LOGGER.info(INFINITE_EMERALDS.getClass());
 	}
 }

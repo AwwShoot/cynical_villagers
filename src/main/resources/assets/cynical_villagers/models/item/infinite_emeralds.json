@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cynical_villagers:infinite_emeralds"
+  }
+}

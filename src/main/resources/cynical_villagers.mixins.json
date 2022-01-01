@@ -4,6 +4,7 @@
   "package": "net.fabricmc.cynical_villagers.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "ItemMixin"
   ],
   "client": [
 
